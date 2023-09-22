@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e42de78c37d6f42885aaa04c2d6785, type: 3}
+  m_Name: scenario_4
+  m_EditorClassIdentifier: 
+  _roundId: 4
+  _roundSlogan: Avoiders!!
+  _roundDescription: Enemies avoid projectiles.
+  _scenarioDetails: {fileID: 11400000, guid: 2e95aefe7ade9df42bcf5b1cd84e0241, type: 2}

@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4763421645277468432}
   - component: {fileID: 3332616458543541705}
   m_Layer: 0
-  m_Name: Magic_Flame_bomb
-  m_TagString: MagicFlameBomb
+  m_Name: Flame_Bomb
+  m_TagString: FlameBomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3502613026196813558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2599, y: 0.645, z: 0}
-  m_LocalScale: {x: 4.78928, y: 2.8594768, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.4634722, y: 1.2756213, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.49815395}
+  m_Offset: {x: 0.0059151053, y: -0.68122256}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,7 +128,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.68913203}
+  m_Size: {x: 1.1292375, y: 0.28934336}
   m_EdgeRadius: 0
 --- !u!50 &4763421645277468432
 Rigidbody2D:

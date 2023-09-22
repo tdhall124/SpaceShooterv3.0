@@ -6,10 +6,21 @@ public class Laser : MonoBehaviour
 {
     [SerializeField] private float _speed = 8f;
     private bool _isEnemyLaser = false;
+    public bool IsEnemyLaser
+    {
+        get { return _isEnemyLaser; }
+        set { _isEnemyLaser = value; }
+    }
+    private bool _isBackwardsLaser = false;
+    public bool IsBackwardsLaser
+    {
+        get { return _isBackwardsLaser; }
+        set { _isBackwardsLaser = value; }
+    }
 
     void Update()
     {
-        if (_isEnemyLaser == false)
+        if (_isEnemyLaser == false || _isBackwardsLaser == true)
         {
             MoveUp();
         }
@@ -24,10 +35,13 @@ public class Laser : MonoBehaviour
         if (other.tag == "Player" && _isEnemyLaser == true)
         {
             Player player = other.GetComponent<Player>();
-            if (player != null)
-            {
-                player.Damage();
-            }
+            player?.Damage();
+            Destroy(this.gameObject);
+        }
+        else if (other.tag == "Powerup" && _isEnemyLaser == true)
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
     }
 
@@ -57,12 +71,5 @@ public class Laser : MonoBehaviour
             else
                 Destroy(this.gameObject);
         }
-    }
-
-    public void AssignEnemyLaser()
-    { 
-        // This method and attribute are used to distinguish
-        // the Player's lasers from the enemy's lasers
-        _isEnemyLaser = true; 
     }
 }

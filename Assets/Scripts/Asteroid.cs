@@ -5,18 +5,12 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [SerializeField] private float _rotateSpeed = 20.0f;
-    [SerializeField] private GameObject _explosionPrefab;
-    [SerializeField] private SpawnManager _spawnManager;
+    [SerializeField] private GameObject _explosionPrefab;   
 
     private void Start()
     {
         if (_explosionPrefab == null)
             Debug.LogError("Asteroid::Start: The Explosion prefab is NULL.");
-
-        // The Asteroid tells the Spawn_Manager to start spawning
-        // and then the game is underway
-        if (_spawnManager == null)
-            Debug.LogError("Asteroid::Start: The Spawn_Manager is NULL.");
     }
 
     void Update()
@@ -30,7 +24,10 @@ public class Asteroid : MonoBehaviour
         {
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
-            _spawnManager.StartSpawning();
+
+            // The Asteroid tells the Spawn_Manager to start spawning
+            // and then the game is underway
+            SpawnManager.Instance.StartSpawning();
             Destroy(this.gameObject, 0.25f);
         }
     }

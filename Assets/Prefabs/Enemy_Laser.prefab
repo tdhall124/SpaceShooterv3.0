@@ -94,10 +94,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5688706041144907195, guid: 71639d1fe42198142b9a0f7c3deddbea,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6380506786102841757, guid: 71639d1fe42198142b9a0f7c3deddbea,
         type: 3}
       propertyPath: m_Name
       value: Laser_right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380506786102841757, guid: 71639d1fe42198142b9a0f7c3deddbea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Laser
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71639d1fe42198142b9a0f7c3deddbea, type: 3}
@@ -169,10 +179,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5688706041144907195, guid: 71639d1fe42198142b9a0f7c3deddbea,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6380506786102841757, guid: 71639d1fe42198142b9a0f7c3deddbea,
         type: 3}
       propertyPath: m_Name
       value: Laser_left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380506786102841757, guid: 71639d1fe42198142b9a0f7c3deddbea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Laser
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71639d1fe42198142b9a0f7c3deddbea, type: 3}

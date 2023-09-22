@@ -98,9 +98,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010882616, y: 0.25101876}
+  m_Offset: {x: 0.010882616, y: 0.11328721}
   serializedVersion: 2
-  m_Radius: 1.9269502
+  m_Radius: 2.1494396
 --- !u!50 &9014207217129715201
 Rigidbody2D:
   serializedVersion: 4
